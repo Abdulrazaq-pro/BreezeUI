@@ -1,0 +1,196 @@
+---
+title: Logo Cloud Section
+description: A flexible and responsive sidebar component with animations, collapsible behavior, and comprehensive customization options.
+---
+
+import { PreviewContainer } from "@/components/PreviewContainer";
+import { TypeTable } from "fumadocs-ui/components/type-table";
+
+import { Tabs, Tab } from "fumadocs-ui/components/tabs";
+import Hero1 from "@/contents/hero/Hero1";
+import LogoCloud1 from "@/contents/logo-cloud/logoCloud1";
+import LogoCloud2 from "@/contents/logo-cloud/logoCloud2";
+
+{/* // import { url } from "@/app/layout.config"; */}
+
+import {
+  SidebarBasic,
+  SidebarWithProfile,
+  SidebarWithTeamSelector,
+  SidebarAdvanced,
+  SidebarMobile,
+} from "@/components/ui/Sidebar";
+
+<Tabs items={["Preview", "Code"]}>
+  <Tab value="Preview">
+    {/* <PreviewContainer> */}
+      <LogoCloud1/>
+    {/* </PreviewContainer> */}
+  </Tab>
+  <Tab value="Code">
+   ```tsx
+     import React from "react";
+export default function LogoCloud() {
+  return (
+    <section className="py-16 bg-gray-50">
+      <div className="container px-4 mx-auto">
+        <div className="flex flex-wrap -mx-4 -mb-8">
+          <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+            <div className="flex h-32 px-4 items-center justify-center bg-white rounded-md">
+              <img className="block" src="logo-cloud/slack.svg" alt="" />
+            </div>
+          </div>
+          <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+            <div className="flex h-32 px-4 items-center justify-center bg-white rounded-md">
+              <img
+                className="block"
+                src="logo-cloud/google.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+            <div className="flex h-32 px-4 items-center justify-center bg-white rounded-md">
+              <img
+                className="block"
+                src="logo-cloud/coca-cola.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+            <div className="flex h-32 px-4 items-center justify-center bg-white rounded-md">
+              <img
+                className="block"
+                src="logo-cloud/adidas.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+````
+
+  </Tab>
+</Tabs>
+
+
+<Tabs items={["Preview", "Code"]}>
+  <Tab value="Preview">
+    {/* <PreviewContainer> */}
+      <LogoCloud2/>
+    {/* </PreviewContainer> */}
+  </Tab>
+  <Tab value="Code">
+   ```tsx
+     import React from "react";
+
+export default function LogoCloud2() {
+  return (
+    <section className="py-24 md:py-36">
+      <div className="container mx-auto px-4">
+        <h2 className="mb-16 font-heading text-4xl font-medium text-black text-center">
+          They trusted us
+        </h2>
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-wrap justify-center -m-8">
+            <div className="w-auto p-8">
+              <div className="p-8 flex justify-center items-center bg-gray-50 rounded-2xl w-32 h-32">
+                <img
+                  className="h-13"
+                  src="/contentimage/logo-cloud/spotify.svg"
+                  alt="Spotify logo"
+                />
+              </div>
+            </div>
+            <div className="w-auto p-8">
+              <div className="p-8 flex justify-center items-center bg-gray-50 rounded-2xl w-32 h-32">
+                <img
+                  className="h-13"
+                  src="/contentimage/logo-cloud/slack.svg"
+                  alt="Slack logo"
+                />
+              </div>
+            </div>
+            <div className="w-auto p-8">
+              <div className="p-8 flex justify-center items-center bg-gray-50 rounded-2xl w-32 h-32">
+                <img
+                  className="h-13"
+                  src="/contentimage/logo-cloud/spotify.svg"
+                  alt="Figma logo"
+                />
+              </div>
+            </div>
+            <div className="w-auto p-8">
+              <div className="p-8 flex justify-center items-center bg-gray-50 rounded-2xl w-32 h-32">
+                <img
+                  className="h-13"
+                  src="/contentimage/logo-cloud/apple-dark.svg"
+                  alt="Apple logo"
+                />
+              </div>
+            </div>
+            <div className="w-auto p-8">
+              <div className="p-8 flex justify-center items-center bg-gray-50 rounded-2xl w-32 h-32">
+                <img
+                  className="h-10"
+
+                  src="/contentimage/logo-cloud/mastercard.svg"
+                  alt="Mastercard logo"
+                />
+              </div>
+            </div>
+            <div className="w-auto p-8">
+              <div className="p-8 flex justify-center items-center bg-gray-50 rounded-2xl w-32 h-32">
+                <img
+                  className="h-11"
+                  src="/contentimage/logo-cloud/microsoft.svg"
+                  alt="Microsoft logo"
+                />
+              </div>
+            </div>
+            <div className="w-auto p-8">
+              <div className="p-8 flex justify-center items-center bg-gray-50 rounded-2xl w-32 h-32">
+                <img
+                  className="h-7"
+                  src="/contentimage/logo-cloud/visa.svg"
+                  alt="Visa logo"
+                />
+              </div>
+            </div>
+            <div className="w-auto p-8">
+              <div className="p-8 flex justify-center items-center bg-gray-50 rounded-2xl w-32 h-32">
+                <img
+                  className="h-8"
+                  src="/contentimage/logo-cloud/brand.svg"
+                  alt="Brand logo"
+                />
+              </div>
+            </div>
+            <div className="w-auto p-8">
+              <div className="p-8 flex justify-center items-center bg-gray-50 rounded-2xl w-32 h-32">
+                <img
+                  className="h-13"
+                  src="/contentimage/logo-cloud/opera.svg"
+                  alt="Opera logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+
+
+````
+
+  </Tab>
+</Tabs>

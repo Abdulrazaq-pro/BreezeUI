@@ -1,0 +1,20 @@
+{
+  "title": "UI",
+  "description": "Base components and utilities",
+  "icon": "Boxes",
+  "root": true,
+  "pages": [
+    "---Getting Started---",
+    "getting-started/introduction",
+    "getting-started/installation",
+    "getting-started/rtl-setup",
+    "getting-started/changelog",
+    "getting-started/roadmap",
+    "---Everything by BreezeUI---",
+    "everything-by-breezeui/base-components",
+    "[LayoutTemplate][Blocks](/template-commingsoon)",
+    "[PanelLeftDashed][Templates](/template-commingsoon)",
+    "---UI---",
+    "...components"
+  ]
+}

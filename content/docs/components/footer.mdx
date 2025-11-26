@@ -1,0 +1,78 @@
+---
+title: Footer Section
+description: A flexible and responsive sidebar component with animations, collapsible behavior, and comprehensive customization options.
+---
+
+import { PreviewContainer } from "@/components/PreviewContainer";
+import { TypeTable } from "fumadocs-ui/components/type-table";
+
+import { Tabs, Tab } from "fumadocs-ui/components/tabs";
+import Hero1 from "@/contents/hero/Hero1";
+import Footer1 from "@/contents/footer/Footer1";
+
+import {
+  SidebarBasic,
+  SidebarWithProfile,
+  SidebarWithTeamSelector,
+  SidebarAdvanced,
+  SidebarMobile,
+} from "@/components/ui/Sidebar";
+
+<Tabs items={["Preview", "Code"]}>
+  <Tab value="Preview">
+      <Footer1/>
+  </Tab>
+  <Tab value="Code">
+   ```tsx
+      import React from "react";
+
+export default function Test2() {
+  return (
+    <section className="relative py-20 2xl:py-40 bg-gray-800">
+      <div className="container px-4 mx-auto">
+        <div className="flex flex-wrap items-center -mx-4">
+          <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
+            <img
+              className="max-w-md mx-auto object-cover"
+              src={`${url}/features/zospace_app1.png`}
+              alt=""
+            />
+          </div>
+          <div className="w-full lg:w-1/2 px-4">
+            <div className="max-w-xl">
+              <a className="inline-block text-2xl font-bold" href="#">
+                <img
+                  className="h-7"
+                  src="zospace-assets/logos/zospace-logo.svg"
+                  alt=""
+                  width="auto"
+                />
+              </a>
+              <h2 className="my-14 text-5xl md:text-7xl font-bold font-heading text-white">
+                Yes! Collaborate everywhere
+              </h2>
+            
+              <p className="mb-10 text-xl text-gray-200">
+                In general, dignissim accumsan, lacus vel dictum semper, ipsum
+                justo fermentum ex, sagittis sollicitudin.
+              </p>
+              <p className="mb-20 text-xl text-gray-200">
+                This morning, platea dictumst nec nunc. In hac habitasse.
+              </p>
+              <a
+                className="inline-block px-12 py-5 bg-blue-500 hover:bg-blue-600 rounded-full text-lg font-bold text-white transition duration-200"
+                href="#"
+              >
+                Downolad
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+```
+
+  </Tab>
+</Tabs>
