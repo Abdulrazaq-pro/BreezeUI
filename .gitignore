@@ -4,7 +4,7 @@
 # generated content
 .contentlayer
 .content-collections
-.source
+# .source
 
 # test & build
 /coverage
