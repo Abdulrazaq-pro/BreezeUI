@@ -2,6 +2,13 @@
 
 import React from "react";
 
+// Extend window type so TS stops complaining
+declare global {
+  interface Window {
+    datafast?: (goal: string) => void;
+  }
+}
+
 interface TrackedLinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   goal: string;
@@ -10,12 +17,14 @@ interface TrackedLinkProps
 
 const TrackedLink = ({ goal, children, ...props }: TrackedLinkProps) => {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (typeof window !== "undefined" && window?.datafast) {
+    if (typeof window !== "undefined" && typeof window.datafast === "function") {
       console.log("TrackedLink clicked:", goal);
       window.datafast(goal);
     }
-    if (props.onClick) props.onClick(e);
+
+    props.onClick?.(e);
   };
+
   return (
     <a {...props} onClick={handleClick}>
       {children}

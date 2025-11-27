@@ -18,12 +18,22 @@ const badgeVariants = cva(
         outline:
           "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
       },
+
+      // ✅ NEW: size variants added
+      size: {
+        sm: "text-[10px] px-1.5 py-0.5 [&>svg]:size-3",
+        md: "text-xs px-2 py-0.5 [&>svg]:size-3",         // your original size
+        lg: "text-sm px-3 py-1 [&>svg]:size-4",
+      },
     },
+
     defaultVariants: {
       variant: "default",
+      size: "md", // ✅ default size
     },
   }
-)
+);
+
 
 function Badge({
   className,

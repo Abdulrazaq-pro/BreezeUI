@@ -11,9 +11,10 @@
     "getting-started/changelog",
     "getting-started/roadmap",
     "---Everything by BreezeUI---",
-    "everything-by-breezeui/block",
-    "everything-by-breezeui/template",
-    "---UI Sections---",
+    "everything-by-breezeui/base-components",
+    "[LayoutTemplate][Blocks](/template-commingsoon)",
+    "[PanelLeftDashed][Templates](/template-commingsoon)",
+    "---UI---",
     "...components"
   ]
 }

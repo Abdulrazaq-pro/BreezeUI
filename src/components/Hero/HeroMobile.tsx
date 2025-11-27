@@ -3,7 +3,7 @@ import {
   Clipboard,
   Resources,
   SandpackLogo,
-  SandpackPreview,
+  // SandpackPreview,
   Text,
 } from "../common";
 
@@ -85,7 +85,7 @@ export const HeroMobile: React.FC = () => {
       <Clipboard />
       {/* <Resources /> */}
       <Box css={{ display: "flex", justifyContent: "center", width: "100%" }}>
-        <SandpackPreview />
+        {/* <SandpackPreview /> */}
       </Box>
     </Box>
   );

@@ -57,7 +57,7 @@ const ClipboardProvider: React.FC<{ children?: React.ReactNode }> = ({
 
   const copyToClipboard = useCallback(() => {
     try {
-      navigator.clipboard.writeText(content.commands.install);
+      // navigator.clipboard.writeText(content.commands.install);
       setToastVisible(true);
     } catch (err) {
       console.error("Failed to copy command to clipboard", err);

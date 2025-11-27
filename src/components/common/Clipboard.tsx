@@ -47,7 +47,7 @@ export const Clipboard: React.FC = () => {
           },
         }}
       >
-        {content.commands.install}
+        {/* {content.commands.install} */}
       </Text>
       <Box
         css={{

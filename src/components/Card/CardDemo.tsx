@@ -16,9 +16,9 @@ export function CardDemo() {
         <Skeleton />
       </CardSkeletonContainer>
       <CardTitle>Breeze UI Power</CardTitle>
-     <CardDescription>
-  Breeze UI makes interfaces faster, smarter, and delightfully interactive.
-</CardDescription>
+      <CardDescription>
+        Breeze UI makes interfaces faster, smarter, and delightfully interactive.
+      </CardDescription>
 
     </Card>
   );
@@ -36,8 +36,17 @@ const Skeleton = () => {
   ];
 
   useEffect(() => {
-    animate(sequence, { repeat: Infinity, repeatDelay: 1 });
+    const instances = sequence.map(([selector, keyframes, options]) =>
+      animate(selector, keyframes, {
+        // ...options,
+        repeat: Infinity,
+        repeatDelay: 1,
+      })
+    );
+
+    return () => instances.forEach((inst) => inst.cancel());
   }, []);
+
 
   return (
     <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
@@ -291,7 +300,7 @@ export const CardSkeletonContainer = ({
         "h-[15rem] md:h-[20rem] rounded-xl z-40",
         className,
         showGradient &&
-          "bg-neutral-300 dark:bg-[rgba(40,40,40,0.70)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]"
+        "bg-neutral-300 dark:bg-[rgba(40,40,40,0.70)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]"
       )}
     >
       {children}

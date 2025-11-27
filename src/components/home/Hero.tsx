@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 import { ArrowBigRight, Sparkles } from "lucide-react";
 import { useState, useEffect } from "react";
 
-import { VideoPlayer } from "../ui/VideoPlayer";
+// import { VideoPlayer } from "../ui/VideoPlayer";
 
 import {
   Tooltip,
@@ -22,7 +22,7 @@ import {
   SiLucide,
   SiTailwindcss,
 } from "react-icons/si";
-import CarbonAds from "../other/carbon";
+// import CarbonAds from "../other/carbon";
 
 const Hero = () => {
   const [stars, setStars] = useState<number | null>(null);
@@ -48,7 +48,7 @@ const Hero = () => {
       <section className="relative flex flex-col items-center justify-center gap-12 px-10 text-center py-16 pt-24">
         <div className="flex items-center justify-center gap-4 flex-col">
           <Badge
-            icon={Sparkles}
+            // icon={Sparkles}
             className="rounded-full cursor-pointer"
             variant={"secondary"}
             onClick={() => {
@@ -138,14 +138,14 @@ const Hero = () => {
           </TooltipProvider>
         </div>
         <div className="border rounded-[var(--radius))] overflow-hidden w-full ">
-          <VideoPlayer
+          {/* <VideoPlayer
             src="https://5xfmztgsig.ufs.sh/f/ZzCwT4wrsqrVAxvzLGNbFLIwa6jGOv4xSYBbUiV8flqz3KPy"
             poster="https://5xfmztgsig.ufs.sh/f/ZzCwT4wrsqrV9FceSLIpSmnpVdxc0kOoYPTae1HtKsCWgXhl"
             size={"full"}
             className="w-full h-auto rounded-[var(--radius))]"
-          />
+          /> */}
         </div>
-        <CarbonAds format="cover" />
+        {/* <CarbonAds format="cover" /> */}
       </section>
     </>
   );

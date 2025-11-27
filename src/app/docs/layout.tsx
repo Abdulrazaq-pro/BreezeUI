@@ -14,7 +14,7 @@
 import { DocsLayout } from 'fumadocs-ui/layouts/docs';
 import { baseOptions } from '@/lib/layout.shared';
 import { source } from '@/lib/source';
-import { CodePreview } from '@/components/code-preview'; // Add this import
+// import { CodePreview } from '@/components/code-preview'; // Add this import
 
 export default function Layout({ children }: LayoutProps<'/docs'>) {
   return (

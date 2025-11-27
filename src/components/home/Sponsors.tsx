@@ -95,7 +95,7 @@ const Sponsors = () => {
           ))}
         </div>
       ) : sponsors.length === 0 ? (
-        <Button size="xl" variant="secondary" asChild className="px-8 py-6">
+        <Button size="lg" variant="secondary" asChild className="px-8 py-6">
           <a
             href="https://github.com/sponsors/preetsuthar17"
             target="_blank"

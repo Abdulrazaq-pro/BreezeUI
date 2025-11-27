@@ -1,1 +1,1 @@
-export { Hero } from "./Hero(from codesandbox)";
+import Hero from "../home/Hero";

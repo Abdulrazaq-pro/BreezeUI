@@ -1,17 +1,13 @@
 import Hero from "@/components/Hero/Hero";
-// import { Hero } from "@/components/Hero";
 import { Map } from "@/components/Map/Map";
 import { Showcase } from "@/components/Showcase";
 import { CpuArchitecture } from "@/components/ui/cpu-architecture";
-// import Link from "next/link";
-// import { styled } from "stitches.config";
 import { FeatureSteps } from "@/components/Features_Section/features";
 import { Feature_Comparison } from "@/components/Feature_comparison/feature_comparison";
 import Footer from "@/components/Footer/Footer";
 import { CardDemo } from "@/components/Card/CardDemo";
-// import { FeaturesSection } from "@/components/feature-graphics/features-section";
+
 import { FeaturesSection } from "@/components/feature-graphics/features-section";
-// import { Banner } from "fumadocs-ui/components/banner";
 
 export default function HomePage() {
   return (
@@ -24,7 +20,11 @@ export default function HomePage() {
       <Map />
       <Feature_Comparison />
       <CardDemo />
-      <FeaturesSection />
+      <FeaturesSection
+        domain="breezeui.dev"
+        utmParams={{ utm_source: "homepage", utm_campaign: "launch" }}
+      />
+
 
       <FeatureSteps
         className="bg-[#303030]"

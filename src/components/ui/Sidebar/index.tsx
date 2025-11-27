@@ -132,6 +132,7 @@ export function SidebarWithProfile() {
             icon={Folder}
             badge={
               <Badge variant="secondary" size="sm">
+              {/* <Badge variant="secondary" size="sm"> */}
                 12
               </Badge>
             }
