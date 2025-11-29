@@ -27,7 +27,7 @@ export default function HomePage() {
 
 
       <FeatureSteps
-        className="bg-[#303030]"
+        className="bg-[#171717]"
         features={[
           {
             step: "Step 1",

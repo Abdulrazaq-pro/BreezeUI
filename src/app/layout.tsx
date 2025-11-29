@@ -44,7 +44,7 @@ function Layout({ children }: { children: ReactNode }) {
           data-y_margin="18"
         ></script>
       </head> */}
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen overflow-x-hidden">
         <RootProvider
           theme={{
             // enabled: false, // This disables theme switching entirely
