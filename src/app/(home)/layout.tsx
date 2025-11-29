@@ -27,7 +27,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Banner variant="rainbow">
         {" "}
         <Link
-          href="https://pro.BreezeUI.com/blocks"
+          href="/docs/getting-started/introduction"
           className="font-medium"
           target="_blank"
         >
@@ -141,16 +141,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </NavbarMenu>
             ),
           },
-          // {
-          //   text: "Blocks",
-          //   url: "https://pro.BreezeUI.com/blocks",
-          //   secondary: false,
-          // },
-          // {
-          //   text: "Themes",
-          //   url: "https://pro.BreezeUI.com/themes",
-          //   secondary: false,
-          // },
+         
           {
             text: "Templates",
             url: "/template-commingsoon",

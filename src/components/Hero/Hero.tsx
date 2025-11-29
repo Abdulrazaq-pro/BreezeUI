@@ -122,9 +122,7 @@ const Hero = () => {
           <Badge
             className="rounded-full cursor-pointer"
             variant={"secondary"}
-            // onClick={() => {
-            //   window.open("https://pro.BreezeUI.com", "_blank");
-            // }}
+           
           >
             Introducing pre-built blocks
           </Badge>
